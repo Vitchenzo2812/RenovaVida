@@ -1,3 +1,5 @@
-export default function Home() {
-  return <h1>Hello World</h1>
+import LandingPage from "../src/screen/LandingPage";
+
+export default function Index() {
+  return <LandingPage />;
 }

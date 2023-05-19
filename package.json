@@ -6,8 +6,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "framer-motion": "^10.12.12",
     "next": "latest",
-    "next-google-fonts": "^2.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "styled-components": "^5.3.5"

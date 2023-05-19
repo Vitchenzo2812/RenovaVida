@@ -1,17 +1,16 @@
 import { createGlobalStyle } from "styled-components";
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({ weight: ["400", "700"], subsets: ["latin"], display: "swap" });
 
 export const GlobalStyle = createGlobalStyle`
-    :root {
-        --font-family: "Poppins", sans-serif;
-    }
-    
     * {
         padding: 0;
         margin: 0;
         box-sizing: border-box;
         outline: none;
         border: none;
-        font-family: var(--font-family);
+        font-family: ${poppins.style.fontFamily},sans-serif;
         font-weight: 400;
     }
 
@@ -26,4 +25,4 @@ export const GlobalStyle = createGlobalStyle`
         }
         scroll-behavior: auto;
     }
-`
+`;

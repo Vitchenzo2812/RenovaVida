@@ -1,3 +1,5 @@
-export default function NotFound() {
-  return <h1>ERROR: Not Found</h1>;
+import NotFound from "../src/screen/NotFound";
+
+export default function Page404() {
+  return <NotFound />;
 }
