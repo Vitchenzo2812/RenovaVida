@@ -4,7 +4,7 @@ import { THEME } from "../../styles/Theme";
 
 export const Container = styled.div`
   width: 100%;
-  height: 125vh;
+  height: 123vh;
   background-color: ${THEME.LIGHT_BLUE};
 `;
 

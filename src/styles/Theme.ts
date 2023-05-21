@@ -1,6 +1,7 @@
 export enum THEME {
   WHITE = "#FFFFFF",
   BLACK = "#000000",
+  GRAY = "#242424",
   LIGHT_GRAY = "#B4B4B4",
   LIGHT_BLUE = "#3868B0",
   AQUA = "#37BD9C",
