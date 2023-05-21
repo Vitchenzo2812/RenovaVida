@@ -2,7 +2,7 @@ import Link from "next/link";
 import * as S from "./styled";
 
 export default function Header() {
-  const itemsNavBar = ["Eventos", "Parceiros", "Sobre nós", "Como Ajudar", "Contato"];
+  const itemsNavBar = ["Eventos", "Sobre nós", "Parceiros", "Como Ajudar", "Contato"];
 
   return (
     <>

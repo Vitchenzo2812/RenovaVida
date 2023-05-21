@@ -12,6 +12,7 @@ export const Container = styled.div`
   align-items: center;
   width: 100%;
   height: max-content;
+  margin-bottom: 5.6rem;
 `;
 
 export const Title = styled.h2`
