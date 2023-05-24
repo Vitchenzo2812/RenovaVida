@@ -14,10 +14,10 @@ export default function Header() {
             </Link>
           </S.MotionButton>
           <S.Navbar>
-            {itemsNavBar.map((item) => {
+            {itemsNavBar.map((item, index) => {
               const linkItem = item.toLocaleLowerCase().replace(" ", "-");
               return (
-                <S.MotionButton whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }}>
+                <S.MotionButton key={index} whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }}>
                   <S.NavItem href={`#${linkItem}`}>{item}</S.NavItem>
                 </S.MotionButton>
               );
