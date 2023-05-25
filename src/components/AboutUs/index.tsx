@@ -1,7 +1,7 @@
 import { useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import * as S from "./styled";
 import { useEffect } from "react";
+import * as S from "./styled";
 
 const variants = {
   visible: {
@@ -27,9 +27,9 @@ export default function AboutUs() {
 
   return (
     <S.Container id="sobre-nós">
-      <S.MotionDiv ref={ref} initial="hidden" animate={controls} variants={variants}>
-        <S.WrapperAboutUsImage>
-          <S.ImageGroup src="/event1.jpeg" alt="Grupo de Instituto RenovaVida" />
+      <S.WrapperAboutUsImage>
+        <S.ImageGroup src="/event1.jpeg" alt="Grupo de Instituto RenovaVida" />
+        <S.MotionDiv ref={ref} initial="hidden" animate={controls} variants={variants}>
           <S.WrapperAboutUsText>
             <S.Title>RenovaVida</S.Title>
             <S.Text>
@@ -38,8 +38,8 @@ export default function AboutUs() {
               orientação/internação, pois essa também é uma parte importante na harmonia familiar.
             </S.Text>
           </S.WrapperAboutUsText>
-        </S.WrapperAboutUsImage>
-      </S.MotionDiv>
+        </S.MotionDiv>
+      </S.WrapperAboutUsImage>
     </S.Container>
   );
 }

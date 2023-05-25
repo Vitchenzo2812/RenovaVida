@@ -30,10 +30,10 @@ export const WrapperPartnersLogo = styled.div`
   gap: 18rem;
 `;
 
-export const ImagePartner = styled.img<{ haveFocus: boolean }>`
+export const ImagePartner = styled.img<{ havefocus: string }>`
   width: 26rem;
   height: 20rem;
-  opacity: ${(props) => (props.haveFocus ? 1 : 0.5)};
+  opacity: ${(props) => (props.havefocus === "true" ? 1 : 0.5)};
 `;
 
 export const DotDivs = styled.div`
@@ -41,11 +41,11 @@ export const DotDivs = styled.div`
   gap: 2.2rem;
 `;
 
-export const CarouselDots = styled(motion.div)<{ color?: string; haveFocus: boolean }>`
+export const CarouselDots = styled(motion.div)<{ color?: string; havefocus: string }>`
   width: 2.2rem;
   height: 2.2rem;
   border-radius: 50%;
-  background-color: ${(props) => (props.haveFocus ? props.color : THEME.LIGHT_GRAY_DOTS)};
+  background-color: ${(props) => (props.havefocus === "true" ? props.color : THEME.LIGHT_GRAY_DOTS)};
 `;
 
 export const MontionDiv = styled(motion.div)``;

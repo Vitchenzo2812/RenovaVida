@@ -82,7 +82,7 @@ export default function Partners() {
 
     const timer = setInterval(() => {
       setCenterPartner((old) => (old + 1) % data.length);
-    }, 6000);
+    }, 5000);
 
     return () => clearInterval(timer);
   }, [controls, inView]);
@@ -98,13 +98,13 @@ export default function Partners() {
 
       <S.WrapperCarouselWithDot>
         <S.WrapperPartnersLogo>
-          {[leftPartner, centerPartner, rightPartner].map((index) => (
-            <div>
-              <S.MontionDiv key={data[index].altImage} initial="hidden" animate="visible" variants={variants}>
+          {[leftPartner, centerPartner, rightPartner].map((partner, index) => (
+            <div key={index}>
+              <S.MontionDiv key={data[partner].altImage} initial="hidden" animate="visible" variants={variants}>
                 <S.ImagePartner
-                  src={data[index].image}
-                  alt={data[index].altImage}
-                  haveFocus={index === centerPartner}
+                  src={data[partner].image}
+                  alt={data[partner].altImage}
+                  havefocus={`${partner === centerPartner}`}
                 />
               </S.MontionDiv>
             </div>
@@ -112,7 +112,13 @@ export default function Partners() {
         </S.WrapperPartnersLogo>
         <S.DotDivs>
           {data.map((dot, index) => (
-            <S.CarouselDots animate="dot" variants={variants} haveFocus={index === centerPartner} color={dot.color} />
+            <S.CarouselDots
+              key={index}
+              animate="dot"
+              variants={variants}
+              havefocus={`${index === centerPartner}`}
+              color={dot.color}
+            />
           ))}
         </S.DotDivs>
       </S.WrapperCarouselWithDot>
