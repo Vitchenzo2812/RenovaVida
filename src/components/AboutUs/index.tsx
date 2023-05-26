@@ -19,7 +19,7 @@ const variants = {
 
 export default function AboutUs() {
   const controls = useAnimation();
-  const [ref, inView] = useInView();
+  const [ref, inView] = useInView({ triggerOnce: true });
 
   useEffect(() => {
     if (inView) controls.start("visible");

@@ -7,6 +7,8 @@ import Initial from "../../components/Initial";
 import Partners from "../../components/Partners";
 import { THEME } from "../../styles/Theme";
 import HowToHelp from "../../components/HowToHelp";
+import ContactUs from "../../components/ContactUs";
+import Footer from "../../components/Footer";
 
 export default function LandingPage() {
   const { scrollYProgress } = useScroll();
@@ -20,6 +22,8 @@ export default function LandingPage() {
       <AboutUs />
       <Partners />
       <HowToHelp />
+      <ContactUs />
+      <Footer />
     </>
   );
 }
