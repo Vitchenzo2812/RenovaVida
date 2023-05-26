@@ -25,8 +25,8 @@ export const Text = styled.p`
 `;
 
 export const ImageGroup = styled.img`
-  width: 70rem;
-  height: 70rem;
+  width: 55rem;
+  height: 55rem;
   border-radius: 0 2rem 2rem 0;
 `;
 

@@ -27,13 +27,13 @@ export const CarouselDiv = styled.div`
   justify-content: center;
   align-items: center;
   gap: 20.2rem;
-  padding-top: 4.6rem;
+  padding-top: 3.5rem;
 `;
 
 export const WrapperCarouselSubtitle = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 4.5rem;
+  gap: 4rem;
   align-items: center;
 `;
 
@@ -50,8 +50,8 @@ export const Arrow = styled.img<{ side?: string }>`
 `;
 
 export const imagesCarousel = styled.img`
-  width: 60.8rem;
-  height: 50rem;
+  width: 50rem;
+  height: 42rem;
   border-radius: 2rem;
 `;
 

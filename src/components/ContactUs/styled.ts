@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { THEME } from "../../styles/Theme";
 import { motion } from "framer-motion";
-import Link from "next/link";
 
 export const Container = styled.div`
   display: flex;
@@ -17,10 +16,10 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-size: 8rem;
+  font-size: 6rem;
   font-weight: 700;
   color: ${THEME.WHITE};
-  padding-top: 38rem;
+  padding-top: 25rem;
 `;
 
 export const ContainerAllComponents = styled.div`
@@ -67,13 +66,14 @@ export const WrapperIcons = styled.div`
   gap: 3.7rem;
 `;
 
-export const Map = styled.div`
+export const Map = styled(motion.div)`
   width: 48.1rem;
   height: 48.1rem;
   border-radius: 2rem;
-  background-color: #fff;
+  background: url("/maps.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 `;
 
 export const MotionDiv = styled(motion.div)``;
-
-export const LinkIcons = styled(Link)``;

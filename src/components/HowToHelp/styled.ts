@@ -19,7 +19,7 @@ export const Title = styled.h2`
   font-size: 8rem;
   font-weight: 700;
   color: ${THEME.WHITE};
-  padding-top: 70rem;
+  padding-top: 40rem;
 `;
 
 export const WrapperSubtitles = styled.div`
@@ -29,13 +29,13 @@ export const WrapperSubtitles = styled.div`
 `;
 
 export const Subtitle = styled.h3`
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 400;
   color: ${THEME.WHITE};
 `;
 
 export const SubtitleBold = styled.h3`
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 700;
   color: ${THEME.WHITE};
 `;
@@ -52,13 +52,13 @@ export const WrapperTextSection = styled.div`
   flex-direction: column;
   gap: 1.6rem;
   align-items: center;
-  padding-top: 15rem;
+  padding-top: 14rem;
 `;
 
 export const WrapperWhiteBoxPix = styled.div`
   display: flex;
-  gap: 20rem;
   align-items: center;
+  gap: 10rem;
 `;
 
 export const WhiteBox = styled.div`
@@ -111,7 +111,7 @@ export const MotionDiv = styled(motion.div)`
 `;
 
 export const ContainerPartnerDonor = styled(motion.div)`
-  padding-top: 20rem;
+  padding-top: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -150,7 +150,7 @@ export const ContainerPersonalHelp = styled(motion.div)`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  gap: 9rem;
+  gap: 6.5rem;
   padding: 20rem 0 10rem 0;
 `;
 

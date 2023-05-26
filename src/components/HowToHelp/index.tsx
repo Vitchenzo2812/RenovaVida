@@ -36,11 +36,9 @@ export default function HowToHelp() {
   const controlsHowToHelp = useAnimation();
   const controlsPartnerDonor = useAnimation();
   const controlsPersonalHelp = useAnimation();
-  const controlsBoxes = useAnimation();
   const [howToHelp, howToHelpInView] = useInView({ triggerOnce: true });
   const [partnerDonor, partnerDonorInView] = useInView({ triggerOnce: true });
   const [personalHelp, personalHelpInView] = useInView({ triggerOnce: true });
-  const [boxes, boxesInView] = useInView({ triggerOnce: true });
 
   useEffect(() => {
     if (howToHelpInView) controlsHowToHelp.start("visible");
@@ -64,7 +62,7 @@ export default function HowToHelp() {
             <S.Subtitle>Venha fazer parte da nossa família, como</S.Subtitle>
             <S.SubtitleBold>colaborador</S.SubtitleBold>
             <S.Subtitle>ou</S.Subtitle>
-            <S.SubtitleBold>profissional voluntário</S.SubtitleBold>
+            <S.SubtitleBold>profissional voluntário!</S.SubtitleBold>
           </S.WrapperSubtitles>
 
           <S.WrapperTextSection>
@@ -115,7 +113,8 @@ export default function HowToHelp() {
           <S.TextSection color={THEME.GRAY} size={3}>
             Mude a vida de várias pessoas contribuindo mensalmente!
             <br />
-            Se tornando um doador parceiro, todo mês você recebe uma arte como agradecimento de sua ajuda!
+            Se tornando um doador parceiro, todo mês você recebe uma
+            <br /> arte como agradecimento de sua ajuda!
           </S.TextSection>
         </S.WrapperTextPartnerDonor>
         <S.ButtonBecomeDonor href="http://forms.gle/rxddFk7pbG1e7iHa6" target="_blank">
@@ -135,14 +134,14 @@ export default function HowToHelp() {
         </S.WrapperTextPersonalHelp>
 
         <S.BlackBox>
-          <S.TextSection color={THEME.WHITE} size={4} weight={700}>
+          <S.TextSection color={THEME.WHITE} size={3} weight={700}>
             Exemplos de contribuição:
           </S.TextSection>
           <S.WrapperItems>
             {itemsListPersonalHelp.map((item, index) => (
               <S.List key={index}>
                 <S.DotList color={THEME.WHITE} />
-                <S.TextSection color={THEME.WHITE} size={4} weight={700}>
+                <S.TextSection color={THEME.WHITE} size={3} weight={700}>
                   {item}
                 </S.TextSection>
               </S.List>

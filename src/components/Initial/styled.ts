@@ -38,7 +38,7 @@ export const WrapperAllItems = styled.div`
   width: 100%;
   height: 110vh;
   justify-content: center;
-  gap: 93rem;
+  gap: 75rem;
 `;
 
 export const ImageHand = styled.img`

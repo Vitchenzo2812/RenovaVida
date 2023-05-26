@@ -18,7 +18,7 @@ export default function Initial() {
         </S.WrapperTitle>
       </S.MotionDivText>
       <S.WrapperAllItems>
-        <S.PositionDiv padding={27.8}>
+        <S.PositionDiv padding={22}>
           <S.MotionDivText
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -37,7 +37,7 @@ export default function Initial() {
           </S.MotionDivText>
         </S.PositionDiv>
         <S.ImageHand src="/hand-initial.svg" />
-        <S.PositionDiv padding={56.6}>
+        <S.PositionDiv padding={46}>
           <S.MotionDivText
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
