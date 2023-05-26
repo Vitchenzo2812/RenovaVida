@@ -11,11 +11,6 @@ export const MotionDiv = styled(motion.div)`
   z-index: 10;
 `;
 
-export const MotionSideBar = styled(motion.div)`
-  width: 100%;
-  background: #fff;
-`;
-
 export const MotionMenu = styled(motion.nav)`
   display: none;
 
@@ -38,12 +33,13 @@ export const Logo = styled.img`
   }
 `;
 
-export const Container = styled.div`
+export const Container = styled.header`
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: center;
   gap: 9.3rem;
+  z-index: 20;
 
   @media (max-width: 1290px) {
     justify-content: space-between;
@@ -59,16 +55,44 @@ export const Navbar = styled.nav`
   }
 `;
 
-export const NavItem = styled(Link)`
+export const NavItem = styled(Link)<{ color: string }>`
   font-size: 3rem;
-  font-family: var(--font-family);
-  font-weight: 600;
+  font-weight: 700;
   transition: all 0.3s ease-in-out;
-  color: ${THEME.BLACK};
+  color: ${(props) => props.color};
   text-decoration: none;
   cursor: pointer;
 
   &:hover {
     opacity: 0.6;
+  }
+`;
+
+export const DivSideBar = styled(motion.div)`
+  display: none;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 3.7rem;
+
+  @media (max-width: 1290px) {
+    display: flex;
+  }
+`;
+
+export const ContainerSideBar = styled(motion.div)`
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 7rem 0;
+  position: fixed;
+  top: 100;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background-color: ${THEME.GRAY};
+  opacity: 0.7;
+
+  @media (max-width: 865px) {
+    width: 100%;
   }
 `;
