@@ -14,11 +14,11 @@ export default function Initial() {
       >
         <S.WrapperTitle>
           <S.Title>Projeto</S.Title>
-          <S.RenovaVida size={8}>RenovaVida</S.RenovaVida>
+          <S.RenovaVida>RenovaVida</S.RenovaVida>
         </S.WrapperTitle>
       </S.MotionDivText>
       <S.WrapperAllItems>
-        <S.PositionDiv padding={22}>
+        <S.PositionDivFirstPhrase>
           <S.MotionDivText
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -35,9 +35,8 @@ export default function Initial() {
               Abraçando vidas e <br /> renovando lares.
             </S.TextInitial>
           </S.MotionDivText>
-        </S.PositionDiv>
-        <S.ImageHand src="/hand-initial.svg" />
-        <S.PositionDiv padding={46}>
+        </S.PositionDivFirstPhrase>
+        <S.PositionDivSecondPhrase>
           <S.MotionDivText
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -54,7 +53,7 @@ export default function Initial() {
               Que leva amor, esperança <br /> e igualdade às familias
             </S.TextInitial>
           </S.MotionDivText>
-        </S.PositionDiv>
+        </S.PositionDivSecondPhrase>
       </S.WrapperAllItems>
     </S.Container>
   );

@@ -17,7 +17,7 @@ export default function LandingPage() {
     <>
       <Header />
       <Scroll style={{ scaleX: scrollYProgress }} />
-      {/* <Initial /> */}
+      <Initial />
       {/* <Events />
       <AboutUs />
       <Partners />

@@ -3,14 +3,6 @@ import styled from "styled-components";
 import { THEME } from "../../styles/Theme";
 import { motion } from "framer-motion";
 
-export const MotionDiv = styled(motion.div)`
-  position: sticky;
-  top: 0;
-  left: 0;
-  background-color: ${THEME.WHITE};
-  z-index: 10;
-`;
-
 export const MotionMenu = styled(motion.nav)`
   display: none;
 
@@ -29,7 +21,14 @@ export const Logo = styled.img`
   cursor: pointer;
 
   @media (max-width: 1290px) {
+    width: 10rem;
+    height: 10rem;
     margin-left: 3.7rem;
+  }
+
+  @media (max-width: 922px) {
+    width: 8rem;
+    height: 8rem;
   }
 `;
 
@@ -39,7 +38,11 @@ export const Container = styled.header`
   align-items: center;
   justify-content: center;
   gap: 9.3rem;
-  z-index: 20;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: ${THEME.WHITE};
+  z-index: 10;
 
   @media (max-width: 1290px) {
     justify-content: space-between;
@@ -90,7 +93,7 @@ export const ContainerSideBar = styled(motion.div)`
   width: 40%;
   height: 100%;
   background-color: ${THEME.GRAY};
-  opacity: 0.7;
+  opacity: 0.9;
 
   @media (max-width: 865px) {
     width: 100%;
