@@ -83,7 +83,7 @@ export default function ContactUs() {
                   const nameIcon = icon.slice(1, -4);
                   return (
                     <Link href={state} target="_blank" key={index} onClick={() => dispatch({ icon: nameIcon })}>
-                      <S.Icon icon={icon} hover={hoverIcon} />;
+                      <S.Icon icon={icon} hover={hoverIcon} />
                     </Link>
                   );
                 })}

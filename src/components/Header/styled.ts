@@ -94,6 +94,7 @@ export const ContainerSideBar = styled(motion.div)`
   height: 100%;
   background-color: ${THEME.GRAY};
   opacity: 0.9;
+  z-index: 100;
 
   @media (max-width: 865px) {
     width: 100%;

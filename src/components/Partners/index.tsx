@@ -105,6 +105,7 @@ export default function Partners() {
                   src={data[partner].image}
                   alt={data[partner].altImage}
                   havefocus={`${partner === centerPartner}`}
+                  leftAndrightSide={partner === leftPartner || partner === rightPartner}
                 />
               </S.MontionDiv>
             </div>

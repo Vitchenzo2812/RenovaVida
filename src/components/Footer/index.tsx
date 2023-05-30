@@ -1,4 +1,3 @@
-import { THEME } from "../../styles/Theme";
 import * as S from "./styled";
 
 export default function Footer() {

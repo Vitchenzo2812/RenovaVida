@@ -61,7 +61,12 @@ export default function Header() {
           {itemsNavBar.map((item, index) => {
             const linkItem = item.toLocaleLowerCase().replace(" ", "-");
             return (
-              <S.MotionButton key={index} whileHover={{ scale: 1.3 }} whileTap={{ scale: 0.9 }}>
+              <S.MotionButton
+                key={index}
+                whileHover={{ scale: 1.3 }}
+                whileTap={{ scale: 0.9 }}
+                onClick={() => setActiveSideBar(false)}
+              >
                 <S.NavItem color={THEME.WHITE} href={`#${linkItem}`}>
                   {item}
                 </S.NavItem>

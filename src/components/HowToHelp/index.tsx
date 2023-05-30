@@ -59,19 +59,13 @@ export default function HowToHelp() {
         <S.MotionDiv ref={howToHelp} initial="hidden" animate={controlsHowToHelp} variants={variants}>
           <S.Title>Como ajudar?</S.Title>
           <S.WrapperSubtitles>
-            <S.Subtitle>Venha fazer parte da nossa família, como</S.Subtitle>
-            <S.SubtitleBold>colaborador</S.SubtitleBold>
-            <S.Subtitle>ou</S.Subtitle>
-            <S.SubtitleBold>profissional voluntário!</S.SubtitleBold>
+            <S.Subtitle>Venha fazer parte da nossa família, como coloborador ou profissional voluntário!</S.Subtitle>
           </S.WrapperSubtitles>
-
           <S.WrapperTextSection>
-            <S.TextSection color={THEME.WHITE} size={6} weight={700}>
-              Faça o bem, doe!
-            </S.TextSection>
-            <S.TextSection color={THEME.WHITE} size={3}>
+            <S.TitleSections color={THEME.WHITE}>Faça o bem, doe!</S.TitleSections>
+            <S.SubtitleSections color={THEME.WHITE}>
               Seja a ajuda que o outro precisa. As suas doações nos ajudarão a fornecer:
-            </S.TextSection>
+            </S.SubtitleSections>
           </S.WrapperTextSection>
         </S.MotionDiv>
 
@@ -80,9 +74,7 @@ export default function HowToHelp() {
             {itemsListPix.map((item, index) => (
               <S.List key={index}>
                 <S.DotList color={THEME.GREEN} />
-                <S.TextSection color={THEME.GREEN} size={4} weight={700}>
-                  {item}
-                </S.TextSection>
+                <S.ItemsTextWhiteBox>{item}</S.ItemsTextWhiteBox>
               </S.List>
             ))}
           </S.WhiteBox>
@@ -90,16 +82,12 @@ export default function HowToHelp() {
           <S.ContainerPix>
             <S.WrapperIconAndTextPix>
               <S.Icons src="/pix.svg" alt="Icone do Pix" />
-              <S.TextSection color={THEME.WHITE} size={4} weight={700}>
-                Doe com Pix
-              </S.TextSection>
+              <S.TitlePix>Doe com Pix</S.TitlePix>
             </S.WrapperIconAndTextPix>
 
             <S.WrapperKeyPix>
               <S.Icons src="/key.svg" alt="Icone chave Pix" />
-              <S.TextSection color={THEME.WHITE} size={3}>
-                INSTITUTORENOVAVIDA@GMAIL.COM
-              </S.TextSection>
+              <S.TextPix>INSTITUTORENOVAVIDA@GMAIL.COM</S.TextPix>
             </S.WrapperKeyPix>
           </S.ContainerPix>
         </S.WrapperWhiteBoxPix>
@@ -107,15 +95,11 @@ export default function HowToHelp() {
 
       <S.ContainerPartnerDonor ref={partnerDonor} initial="hidden" animate={controlsPartnerDonor} variants={variants}>
         <S.WrapperTextPartnerDonor>
-          <S.TextSection color={THEME.GRAY} size={6} weight={700}>
-            Torne-se um doador parceiro!
-          </S.TextSection>
-          <S.TextSection color={THEME.GRAY} size={3}>
-            Mude a vida de várias pessoas contribuindo mensalmente!
-            <br />
-            Se tornando um doador parceiro, todo mês você recebe uma
-            <br /> arte como agradecimento de sua ajuda!
-          </S.TextSection>
+          <S.TitleSections color={THEME.GRAY}>Torne-se um doador parceiro!</S.TitleSections>
+          <S.SubtitleSections color={THEME.GRAY}>
+            Mude a vida de várias pessoas contribuindo mensalmente! Se tornando um doador parceiro, todo mês você recebe
+            uma arte como agradecimento de sua ajuda!
+          </S.SubtitleSections>
         </S.WrapperTextPartnerDonor>
         <S.ButtonBecomeDonor href="http://forms.gle/rxddFk7pbG1e7iHa6" target="_blank">
           Quero me tornar um!
@@ -124,35 +108,26 @@ export default function HowToHelp() {
 
       <S.ContainerPersonalHelp ref={personalHelp} initial="hidden" animate={controlsPersonalHelp} variants={variants}>
         <S.WrapperTextPersonalHelp>
-          <S.TextSection color={THEME.GRAY} size={6} weight={700}>
-            Seu dom pessoal também importa!
-          </S.TextSection>
-          <S.TextSection color={THEME.GRAY} size={3}>
-            Você pode doar o seu próprio trabalho!
-            <br />O seu dom pessoal é uma contribuição fantástica para a gente.
-          </S.TextSection>
+          <S.TitleSections color={THEME.GRAY}>Seu dom pessoal também importa!</S.TitleSections>
+          <S.SubtitleSections color={THEME.GRAY}>
+            Você pode doar o seu próprio trabalho! O seu dom pessoal é uma contribuição fantástica para a gente.
+          </S.SubtitleSections>
         </S.WrapperTextPersonalHelp>
 
         <S.BlackBox>
-          <S.TextSection color={THEME.WHITE} size={3} weight={700}>
-            Exemplos de contribuição:
-          </S.TextSection>
+          <S.ItemsTextBlackBox color={THEME.WHITE}>Exemplos de contribuição:</S.ItemsTextBlackBox>
           <S.WrapperItems>
             {itemsListPersonalHelp.map((item, index) => (
               <S.List key={index}>
                 <S.DotList color={THEME.WHITE} />
-                <S.TextSection color={THEME.WHITE} size={3} weight={700}>
-                  {item}
-                </S.TextSection>
+                <S.ItemsTextBlackBox color={THEME.WHITE}>{item}</S.ItemsTextBlackBox>
               </S.List>
             ))}
           </S.WrapperItems>
         </S.BlackBox>
 
         <S.WrapperContactUs>
-          <S.TextSection color={THEME.GRAY} size={3}>
-            Caso queira ajudar, entre em contato.
-          </S.TextSection>
+          <S.ItemsTextBlackBox color={THEME.GRAY}>Caso queira ajudar, entre em contato.</S.ItemsTextBlackBox>
         </S.WrapperContactUs>
       </S.ContainerPersonalHelp>
     </>
