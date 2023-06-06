@@ -1,5 +1,13 @@
+import Head from "next/head";
 import LandingPage from "../src/screen/LandingPage";
 
 export default function Index() {
-  return <LandingPage />;
+  return (
+    <>
+      <Head>
+        <title>RenovaVida</title>
+      </Head>
+      <LandingPage />
+    </>
+  );
 }
